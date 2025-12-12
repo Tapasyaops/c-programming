@@ -1,0 +1,39 @@
+/* Write a program to print all factors of a given number.
+*/
+
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("Factors of %d are: ", n);
+    for(i = 1; i <= n; i++) {
+        if(n % i == 0) {
+            printf("%d ", i);
+        }
+    }
+    
+    return 0;
+}
+
+/* Write a program to find the HCF (GCD) of two numbers.
+*/
+
+#include <stdio.h>
+int main()
+{
+    int m,n,i,gcd;
+    printf("enter two numbers:");
+    scanf("%d%d",&m,&n);
+    for(i=1;i<=m && i<=n;i++)
+    {
+        if(m%i==0 && n%i==0)
+        gcd=i;
+    }
+    printf("\n gcd of %d and %d is %d\n",m,n,gcd);
+    return 0;
+}
