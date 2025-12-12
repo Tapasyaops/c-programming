@@ -1,0 +1,68 @@
+Q19: Write a program to classify a triangle as Equilateral, Isosceles, or Scalene based on its side lengths.
+
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    // Input three sides of the triangle
+    printf("Enter a first side(a) :");
+    scanf("%f", &a);
+    printf("Enter a second side(b) :");
+    scanf("%f", &b);
+    printf("Enter a third side(c) :");
+    scanf("%f", &c);
+    
+
+    if (a == b && b == c) {
+        printf("Equilateral\n");
+    }
+    else if (a == b || b == c || a == c) {
+        printf("Isosceles\n");
+    }
+    else {
+        printf("Scalene\n");
+    }
+
+    return 0;
+}
+
+Q20: Write a program to classify a triangle as Equilateral, Isosceles, or Scalene based on its side lengths.
+
+#include <stdio.h>
+
+int main() {
+    int day;
+
+    // Input number (1-7)
+    printf("Enter the no. :");
+    scanf("%d", &day);
+
+    switch(day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+        case 7:
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid input\n");
+    }
+
+    return 0;
+}
